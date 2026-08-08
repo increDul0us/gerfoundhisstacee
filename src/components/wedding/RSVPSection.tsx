@@ -6,7 +6,7 @@ const WEB3FORMS_KEY = "ff505899-7bf3-47d7-a581-0a98e2b09e87";
 
 const RSVPSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState<"yes"|"no"|false>(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [formData, setFormData] = useState({
@@ -42,7 +42,7 @@ const RSVPSection = () => {
       const result = await response.json();
 
       if (result.success) {
-        setSubmitted(true);
+        setSubmitted(formData.attending as "yes"|"no");
       } else {
         setError("Something went wrong. Please try again.");
       }
@@ -64,14 +64,29 @@ const RSVPSection = () => {
       <section id="rsvp" className="bg-lavender-50 py-24">
         <div className="container mx-auto px-6 text-center">
           <div className="mx-auto max-w-md rounded-3xl border border-lavender-200 bg-white p-10 shadow-lg">
-            <PartyPopper className="mx-auto mb-4 h-12 w-12 text-lavender-400" />
-            <h3 className="font-display text-3xl font-bold text-gray-800">
-              Thank You!
-            </h3>
-            <p className="mt-3 text-gray-500">
-              We look forward to celebrating with you at the ceremony.
-            </p>
-            <Heart className="mx-auto mt-4 h-8 w-8 animate-float fill-lavender-400 text-lavender-400" />
+            {submitted === "yes" ? (
+              <>
+                <PartyPopper className="mx-auto mb-4 h-12 w-12 text-lavender-400" />
+                <h3 className="font-display text-3xl font-bold text-gray-800">
+                  Thank You!
+                </h3>
+                <p className="mt-3 text-gray-500">
+                  We look forward to celebrating with you at the ceremony.
+                </p>
+                <Heart className="mx-auto mt-4 h-8 w-8 animate-float fill-lavender-400 text-lavender-400" />
+              </>
+            ) : (
+              <>
+                <Heart className="mx-auto mb-4 h-12 w-12 text-gray-300" />
+                <h3 className="font-display text-3xl font-bold text-gray-800">
+                  We'll Miss You!
+                </h3>
+                <p className="mt-3 text-gray-500">
+                  We're sorry you can't make it, but we appreciate you letting us know.
+                  You'll be in our hearts on the big day.
+                </p>
+              </>
+            )}
           </div>
         </div>
       </section>
