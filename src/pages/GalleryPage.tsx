@@ -18,6 +18,12 @@ import photo15 from "../assets/gallery/photo-15.jpg";
 import photo14 from "../assets/gallery/photo-14.jpg";
 import photo16 from "../assets/gallery/photo-16.jpg";
 import photo17 from "../assets/gallery/photo-17.jpg";
+import food1 from "../assets/gallery/food-1.jpg";
+import food2 from "../assets/gallery/food-2.jpg";
+import food3 from "../assets/gallery/food-3.jpg";
+import food4 from "../assets/gallery/food-4.jpg";
+import food5 from "../assets/gallery/food-5.jpg";
+import food6 from "../assets/gallery/food-6.jpg";
 
 interface PhotoSet {
   title: string;
@@ -50,6 +56,18 @@ const sets: PhotoSet[] = [
       { src: photo2, alt: "Couple portrait" },
       { src: photo4, alt: "Getting ready" },
       { src: photo5, alt: "Candid moment" },
+    ],
+  },
+  {
+    title: "Fit to Foodies",
+
+    photos: [
+      { src: food1, alt: "Pancake time" },
+      { src: food2, alt: "Home cooked meal" },
+      { src: food3, alt: "Pizza night" },
+      { src: food4, alt: "Il Cielo dinner" },
+      { src: food5, alt: "Cheers" },
+      { src: food6, alt: "Blue cocktail" },
     ],
   },
 ];
