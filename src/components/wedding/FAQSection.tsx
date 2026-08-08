@@ -8,6 +8,10 @@ const faqs = [
     a: "Please observe decorum with silence and modest dressing for our wedding mass.",
   },
   {
+  {
+    q: "Do I need to RSVP individually?",
+    a: "Yes — each guest needs to submit their own RSVP, even if you're coming as a couple or family. This helps us get an accurate headcount.",
+  },
     q: "Is there parking?",
     a: "Yes, parking is available at the venue.",
   },
