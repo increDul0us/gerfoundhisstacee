@@ -31,6 +31,15 @@ const milestones = [
   },
   {
     date: "October 25, 2025",
+  {
+    date: "July 27, 2025",
+    title: "Live Match",
+    description: "We watched an Arsenal match together live, seeing our favourite players.",
+    icon: Sparkles,
+    color: "text-pink-500",
+    bg: "bg-pink-50",
+    border: "border-pink-200",
+  },
     title: "The Proposal",
     description: "He asked. She said yes. The rest is history.",
     icon: Gift,
