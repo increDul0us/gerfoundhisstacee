@@ -144,8 +144,8 @@ const RSVPSection = () => {
             </label>
             <div className="grid grid-cols-2 gap-3">
               {[
-                { value: "yes", label: "Joyfully accepts", icon: "🎉" },
-                { value: "no", label: "Regretfully declines", icon: "💌" },
+                { value: "yes", label: "Joyfully accepts", iconType: "yes" as const },
+                { value: "no", label: "Regretfully declines", iconType: "no" as const },
               ].map((opt) => (
                 <label
                   key={opt.value}
@@ -171,7 +171,7 @@ const RSVPSection = () => {
                       <Check className="h-3 w-3 text-white" />
                     </span>
                   )}
-                  <span className="mb-1.5 text-2xl">{opt.icon}</span>
+                  {opt.iconType === "yes" ? <PartyPopper className="mb-1.5 h-6 w-6 text-lavender-400" /> : <Heart className="mb-1.5 h-6 w-6 text-gray-400" />}
                   <span className="text-xs font-semibold leading-tight text-gray-700">{opt.label}</span>
                 </label>
               ))}
