@@ -30,8 +30,6 @@ const milestones = [
     border: "border-gold-200",
   },
   {
-    date: "October 25, 2025",
-  {
     date: "July 27, 2025",
     title: "Live Match",
     description: "We watched an Arsenal match together live, seeing our favourite players.",
