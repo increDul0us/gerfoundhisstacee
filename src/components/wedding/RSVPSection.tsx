@@ -179,35 +179,39 @@ const RSVPSection = () => {
             </div>
           </div>
 
-          <div>
-            <label className="mb-1.5 block text-sm font-semibold text-gray-700">
-              Number of Guests (including you)
-            </label>
-            <select
-              name="guests"
-              value={formData.guests}
-              onChange={handleChange}
-              className="w-full rounded-xl border border-lavender-200 px-4 py-3 text-sm outline-none transition-all focus:border-lavender-400 focus:ring-2 focus:ring-lavender-100"
-            >
-              {[1, 2, 3, 4].map((n) => (
-                <option key={n} value={n}>{n}</option>
-              ))}
-            </select>
-          </div>
+          {formData.attending === "yes" && (
+            <>
+              <div>
+                <label className="mb-1.5 block text-sm font-semibold text-gray-700">
+                  Number of Guests (including you)
+                </label>
+                <select
+                  name="guests"
+                  value={formData.guests}
+                  onChange={handleChange}
+                  className="w-full rounded-xl border border-lavender-200 px-4 py-3 text-sm outline-none transition-all focus:border-lavender-400 focus:ring-2 focus:ring-lavender-100"
+                >
+                  {[1, 2, 3, 4].map((n) => (
+                    <option key={n} value={n}>{n}</option>
+                  ))}
+                </select>
+              </div>
 
-          <div>
-            <label className="mb-1.5 block text-sm font-semibold text-gray-700">
-              Leave a Message
-            </label>
-            <textarea
-              name="message"
-              rows={3}
-              value={formData.message}
-              onChange={handleChange}
-              className="w-full resize-none rounded-xl border border-lavender-200 px-4 py-3 text-sm outline-none transition-all focus:border-lavender-400 focus:ring-2 focus:ring-lavender-100"
-              placeholder="Any words for the happy couple?"
-            />
-          </div>
+              <div>
+                <label className="mb-1.5 block text-sm font-semibold text-gray-700">
+                  Leave a Message
+                </label>
+                <textarea
+                  name="message"
+                  rows={3}
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full resize-none rounded-xl border border-lavender-200 px-4 py-3 text-sm outline-none transition-all focus:border-lavender-400 focus:ring-2 focus:ring-lavender-100"
+                  placeholder="Any words for the happy couple?"
+                />
+              </div>
+            </>
+          )}
 
           {error && (
             <p className="text-sm text-red-500">{error}</p>
