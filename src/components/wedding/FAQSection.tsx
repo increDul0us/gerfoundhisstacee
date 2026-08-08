@@ -8,14 +8,14 @@ const faqs = [
     a: "Please observe decorum with silence and modest dressing for our wedding mass.",
   },
   {
-  },
-  {
     q: "Is there parking?",
     a: "Yes, parking is available at the venue.",
   },
   {
     q: "Can I take photos?",
     a: "During the ceremony, we'd love for you to be present (unplugged ceremony). Use #GerfoundhisStace for any photos you take!",
+  },
+];
 
 const FAQSection = () => {
   const { ref, isVisible } = useScrollAnimation();
