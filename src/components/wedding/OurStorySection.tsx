@@ -51,7 +51,7 @@ const OurStorySection = () => {
             <div className="rounded-2xl border border-gold-100 bg-gold-50/50 p-4 sm:p-6">
               <p className="text-sm leading-relaxed text-gray-600 sm:text-base">
                 Somewhere between debating song choices, disagreeing over food, and 
-                having our fair share of silly arguments, we realised that building a 
+                having our fair share of arguments, we realised that building a 
                 life together is really about making a hundred little decisions 
                 choosing each other's happiness through every single one, and trusting 
                 God to guide us along the way.
