@@ -51,7 +51,6 @@ const Navbar = () => {
           <a
             className="hidden rounded-full bg-lavender-400 px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-lavender-500 hover:shadow-lg hover:shadow-lavender-200 sm:inline-flex"
           >
-            RSVP
           </a>
 
           <button

@@ -47,10 +47,6 @@ const HeroSection = () => {
 
             <div className="mt-6 flex flex-col gap-2.5 sm:mt-8 sm:flex-row sm:justify-center sm:gap-3">
               <a
-                href="#rsvp"
-                className="rounded-full bg-lavender-400 px-6 py-3 text-xs font-bold text-white shadow-lg shadow-lavender-500/30 transition-all hover:bg-lavender-500 hover:shadow-xl sm:px-10 sm:py-3.5 sm:text-sm"
-              >
-                RSVP Now
               </a>
               <a
                 href="#our-story"

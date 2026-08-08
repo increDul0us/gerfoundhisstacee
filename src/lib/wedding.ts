@@ -17,11 +17,3 @@ export const CEREMONY = {
   mapUrl: "https://maps.google.com/maps?q=31+Siglap+Hill,+Singapore+456085",
 };
 
-export const RECEPTION = {
-  time: "6:30 PM (please be seated by 6:00 PM)",
-  title: "The Party",
-  venue: "Singapore Futsing Association",
-  address: "2 Allenby Road #02-01, Singapore 209973",
-  description: "Dinner, drinks, dancing, and a whole lot of love.",
-  mapUrl: "https://maps.google.com/maps?q=2+Allenby+Road,+Singapore+209973",
-};

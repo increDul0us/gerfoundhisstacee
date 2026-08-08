@@ -5,15 +5,7 @@ import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 const faqs = [
   {
     q: "What should I wear?",
-    a: "Please observe decorum with silence and modest dressing for our wedding mass. For the reception, smart casual — look good, feel comfortable! We'd love to see touches of gold if you're feeling it.",
-  },
-  {
-    q: "Can I bring a plus one?",
-    a: "If your invitation says 'and guest', absolutely! If you're unsure, just reach out to us.",
-  },
-  {
-    q: "Will there be food and drinks?",
-    a: "Oh yes. Dinner, drinks, cake — the works.",
+    a: "Please observe decorum with silence and modest dressing for our wedding mass.",
   },
   {
     q: "Is there parking?",
@@ -21,7 +13,7 @@ const faqs = [
   },
   {
     q: "Can I take photos?",
-    a: "During the ceremony, we'd love for you to be present (unplugged ceremony). But at the reception? Snap away! Use #GerfoundhisStace so we can find them!",
+    a: "During the ceremony, we'd love for you to be present (unplugged ceremony). Use #GerfoundhisStace for any photos you take!",
   },
 ];
 
