@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Heart, Send, PartyPopper, Loader2, Check } from "lucide-react";
+import { Heart, Send, PartyPopper, Loader2, Check, Minus, Plus } from "lucide-react";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 const WEB3FORMS_KEY = "ff505899-7bf3-47d7-a581-0a98e2b09e87";
@@ -13,6 +13,7 @@ const RSVPSection = () => {
     name: "",
     email: "",
     attending: "",
+    guests: 1,
     message: "",
   });
 
@@ -33,6 +34,7 @@ const RSVPSection = () => {
           email: formData.email,
           attending: formData.attending === "yes" ? "Yes" : "No",
           invite_type: "Ceremony Only",
+          guests: formData.attending === "yes" ? formData.guests : 0,
           message: formData.message || "(no message)",
         }),
       });
@@ -95,7 +97,7 @@ const RSVPSection = () => {
             RSVP
           </h2>
           <p className="mx-auto mt-2 max-w-md text-sm text-gray-500 sm:mt-3 sm:text-base">
-            Each guest must RSVP individually — even if you're coming together!
+            Please let us know if you'll be joining us for the ceremony.
           </p>
         </div>
 
@@ -176,9 +178,36 @@ const RSVPSection = () => {
             </div>
           </div>
 
-          {/* Message — only when attending */}
+          {/* Guests + Message — only when attending */}
           {formData.attending === "yes" && (
             <>
+              <div>
+                <label className="mb-3 block text-xs font-bold uppercase tracking-wider text-gray-400">
+                  Number of Guests (including you)
+                </label>
+                <div className="flex items-center gap-4 rounded-2xl border-2 border-lavender-100 bg-lavender-50/30 px-5 py-3">
+                  <button
+                    type="button"
+                    onClick={() => setFormData(p => ({ ...p, guests: Math.max(1, p.guests - 1) }))}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-lavender-200 bg-white text-lavender-500 transition-all hover:bg-lavender-400 hover:text-white disabled:opacity-30"
+                    disabled={formData.guests <= 1}
+                  >
+                    <Minus className="h-3.5 w-3.5" />
+                  </button>
+                  <span className="flex-1 text-center font-display text-2xl font-bold text-lavender-500">
+                    {formData.guests}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setFormData(p => ({ ...p, guests: Math.min(10, p.guests + 1) }))}
+                    className="flex h-8 w-8 items-center justify-center rounded-full border border-lavender-200 bg-white text-lavender-500 transition-all hover:bg-lavender-400 hover:text-white disabled:opacity-30"
+                    disabled={formData.guests >= 10}
+                  >
+                    <Plus className="h-3.5 w-3.5" />
+                  </button>
+                </div>
+              </div>
+
               <div>
                 <label className="mb-1.5 block text-xs font-bold uppercase tracking-wider text-gray-400">
                   Leave a Message

@@ -8,8 +8,6 @@ const faqs = [
     a: "Please observe decorum with silence and modest dressing for our wedding mass.",
   },
   {
-    q: "Do I need to RSVP individually?",
-    a: "Yes — each guest needs to submit their own RSVP, even if you're coming as a couple or family. This helps us get an accurate headcount.",
   },
   {
     q: "Is there parking?",
@@ -18,8 +16,6 @@ const faqs = [
   {
     q: "Can I take photos?",
     a: "During the ceremony, we'd love for you to be present (unplugged ceremony). Use #GerfoundhisStace for any photos you take!",
-  },
-];
 
 const FAQSection = () => {
   const { ref, isVisible } = useScrollAnimation();
