@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Is there parking?",
-    a: "Details coming soon! We'll share parking info and directions closer to the date.",
+    a: "Yes, parking is available at the venue.",
   },
   {
     q: "Can I take photos?",
