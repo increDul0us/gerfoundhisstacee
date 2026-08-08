@@ -1,14 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
-import photo6 from "../../assets/gallery/photo-6.jpg";
 import photo15 from "../../assets/gallery/photo-15.jpg";
 import photo16 from "../../assets/gallery/photo-16.jpg";
 import photo2 from "../../assets/gallery/photo-2.jpg";
 import photo3 from "../../assets/gallery/photo-3.jpg";
 
 const previewPhotos = [
-  { src: photo6, alt: "Forever Converse", span: "" },
   { src: photo3, alt: "Matching PJs", span: "" },
   { src: photo15, alt: "Back to back on the pitch", span: "col-span-2", wide: true },
   { src: photo16, alt: "Pillow fight", span: "" },

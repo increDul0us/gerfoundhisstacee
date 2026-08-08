@@ -8,7 +8,6 @@ import photo2 from "../assets/gallery/photo-2.jpg";
 import photo3 from "../assets/gallery/photo-3.jpg";
 import photo4 from "../assets/gallery/photo-4.jpg";
 import photo5 from "../assets/gallery/photo-5.jpg";
-import photo6 from "../assets/gallery/photo-6.jpg";
 import photo7 from "../assets/gallery/photo-7.jpg";
 import photo8 from "../assets/gallery/photo-8.jpg";
 import photo9 from "../assets/gallery/photo-9.jpg";
@@ -47,16 +46,10 @@ const sets: PhotoSet[] = [
       { src: photo9, alt: "Fun times" },
       { src: photo16, alt: "Pillow fight" },
       { src: photo17, alt: "Pillow fight action" },
-    ],
-  },
-  {
-    title: "Us Being Us",
-    photos: [
       { src: photo1, alt: "Together" },
       { src: photo2, alt: "Couple portrait" },
       { src: photo4, alt: "Getting ready" },
       { src: photo5, alt: "Candid moment" },
-      { src: photo6, alt: "Forever Converse" },
     ],
   },
 ];
