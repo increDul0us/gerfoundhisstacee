@@ -7,6 +7,7 @@ const navItems = [
   { label: "Gallery", href: "#gallery" },
   { label: "The Day", href: "#the-day" },
   { label: "FAQ", href: "#faq" },
+  { label: "RSVP", href: "#rsvp" },
 ];
 
 const Navbar = () => {

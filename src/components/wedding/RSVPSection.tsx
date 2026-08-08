@@ -28,8 +28,8 @@ const RSVPSection = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: `Wedding RSVP (Ceremony): ${formData.name} — ${formData.attending === "yes" ? "Attending" : "Not attending"}`,
-          from_name: "Wedding RSVP",
+          subject: `Wedding RSVP (Ceremony Only): ${formData.name} — ${formData.attending === "yes" ? "Attending" : "Not attending"}`,
+          from_name: "Wedding RSVP — Ceremony",
           name: formData.name,
           email: formData.email,
           attending: formData.attending === "yes" ? "Yes" : "No",
@@ -66,13 +66,10 @@ const RSVPSection = () => {
           <div className="mx-auto max-w-md rounded-3xl border border-lavender-200 bg-white p-10 shadow-lg">
             <PartyPopper className="mx-auto mb-4 h-12 w-12 text-lavender-400" />
             <h3 className="font-display text-3xl font-bold text-gray-800">
-              You're In!
+              Thank You!
             </h3>
             <p className="mt-3 text-gray-500">
-              We can't wait to celebrate with you. Get ready for an amazing day!
-            </p>
-            <p className="mt-2 text-lg font-bold text-lavender-500">
-              We'll save you a seat!
+              We look forward to celebrating with you at the ceremony.
             </p>
             <Heart className="mx-auto mt-4 h-8 w-8 animate-float fill-lavender-400 text-lavender-400" />
           </div>
@@ -97,7 +94,7 @@ const RSVPSection = () => {
             RSVP
           </h2>
           <p className="mx-auto mt-2 max-w-md text-sm text-gray-500 sm:mt-3 sm:text-base">
-            We'd love to have you there. Fill this out so we know how many plates to stack!
+            Please let us know if you'll be joining us for the ceremony.
           </p>
         </div>
 
@@ -137,7 +134,7 @@ const RSVPSection = () => {
 
           <div>
             <label className="mb-1.5 block text-sm font-semibold text-gray-700">
-              Will you be attending? *
+              Will you be attending the ceremony? *
             </label>
             <div className="flex gap-3">
               {[

@@ -8,6 +8,7 @@ import GalleryPreview from "../components/wedding/GalleryPreview";
 import QuoteSection from "../components/wedding/QuoteSection";
 import EventSchedule from "../components/wedding/EventSchedule";
 import FAQSection from "../components/wedding/FAQSection";
+import RSVPSection from "../components/wedding/RSVPSection";
 import WelcomeSplash from "../components/wedding/WelcomeSplash";
 import MusicPlayer from "../components/wedding/MusicPlayer";
 import ScrollButton from "../components/wedding/ScrollButton";
@@ -31,6 +32,7 @@ const HomePage = () => {
       <GalleryPreview />
       <QuoteSection />
       <EventSchedule />
+      <RSVPSection />
       <FAQSection />
 
       {/* Floating music player */}
