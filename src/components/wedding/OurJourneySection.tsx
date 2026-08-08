@@ -40,6 +40,8 @@ const milestones = [
     bg: "bg-pink-50",
     border: "border-pink-200",
   },
+  {
+    date: "October 25, 2025",
     title: "The Proposal",
     description: "He asked. She said yes. The rest is history.",
     icon: Gift,
