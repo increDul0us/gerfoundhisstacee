@@ -52,7 +52,6 @@ const sets: PhotoSet[] = [
       { src: photo5, alt: "Candid moment" },
     ],
   },
-  {
 ];
 
 const GalleryPage = () => {
