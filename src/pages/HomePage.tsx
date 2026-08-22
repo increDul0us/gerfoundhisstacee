@@ -23,7 +23,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#F3E8F9]">
       <Navbar />
       <HeroSection />
       <CountdownSection />
@@ -40,7 +40,7 @@ const HomePage = () => {
       <ScrollButton />
 
       {/* Footer */}
-      <footer className="border-t border-lavender-100 bg-white py-12 text-center">
+      <footer className="border-t border-lavender-100 bg-white/80 py-12 text-center">
         <div className="container mx-auto px-6">
           <p className="flex items-center justify-center gap-2 font-display text-2xl font-bold text-gray-800">
             {COUPLE_NAME_1} <Heart className="h-5 w-5 fill-lavender-400 text-lavender-400" /> {COUPLE_NAME_2}
