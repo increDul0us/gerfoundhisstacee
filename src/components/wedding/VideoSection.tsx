@@ -1,4 +1,3 @@
-import { Play } from "lucide-react";
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 // Replace this with the couple's actual YouTube video ID
