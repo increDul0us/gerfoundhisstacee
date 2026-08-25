@@ -4,6 +4,7 @@ import HeroSection from "../components/wedding/HeroSection";
 import CountdownSection from "../components/wedding/CountdownSection";
 import OurStorySection from "../components/wedding/OurStorySection";
 import OurJourneySection from "../components/wedding/OurJourneySection";
+import VideoSection from "../components/wedding/VideoSection";
 import GalleryPreview from "../components/wedding/GalleryPreview";
 import QuoteSection from "../components/wedding/QuoteSection";
 import EventSchedule from "../components/wedding/EventSchedule";
@@ -28,6 +29,7 @@ const HomePage = () => {
       <HeroSection />
       <CountdownSection />
       <OurStorySection />
+      <VideoSection />
       <OurJourneySection />
       <GalleryPreview />
       <QuoteSection />
