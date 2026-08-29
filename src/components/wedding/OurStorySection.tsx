@@ -43,8 +43,8 @@ const OurStorySection = () => {
                 From matching PJs to late-night soccer matches on TV and playful 
                 arguments over the remote, we've shared the kind of moments that 
                 make life ours. Through the ups and downs, the laughter and the 
-                challenges, we've grown together, held on to each other, and found 
-                our way through it all.
+                challenges, we've grown together, held on to each other, and 
+                we've grown stronger together.
               </p>
             </div>
 
