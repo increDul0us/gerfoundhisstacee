@@ -1,8 +1,5 @@
 import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
-// Replace this with the couple's actual YouTube video ID
-const YOUTUBE_VIDEO_ID = "et_wzpLHwy0";
-
 const VideoSection = () => {
   const { ref, isVisible } = useScrollAnimation(0.1);
 
@@ -26,19 +23,18 @@ const VideoSection = () => {
           </p>
         </div>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="relative overflow-hidden rounded-3xl border-2 border-lavender-100 shadow-xl shadow-lavender-100">
-            {/* 16:9 aspect ratio container */}
-            <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-              <iframe
-                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?rel=0&modestbranding=1`}
-                title="Our Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full rounded-3xl"
-                loading="lazy"
-              />
-            </div>
+        <div className="mx-auto max-w-2xl">
+          <div className="overflow-hidden rounded-3xl border-2 border-lavender-100 shadow-xl shadow-lavender-100">
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              className="h-auto w-full"
+              poster=""
+            >
+              <source src="/our-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
