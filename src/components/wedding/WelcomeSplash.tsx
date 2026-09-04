@@ -242,7 +242,7 @@ const WelcomeSplash = ({ onEnter }: WelcomeSplashProps) => {
 
             {/* Names */}
             <h1 className="mt-6 font-display text-4xl font-bold text-lavender-600 sm:mt-8 sm:text-5xl">
-              {COUPLE_NAME_2}
+              {COUPLE_NAME_1}
             </h1>
 
             {/* Heart divider */}
@@ -253,7 +253,7 @@ const WelcomeSplash = ({ onEnter }: WelcomeSplashProps) => {
             </div>
 
             <h1 className="font-display text-4xl font-bold text-lavender-600 sm:text-5xl">
-              {COUPLE_NAME_1}
+              {COUPLE_NAME_2}
             </h1>
 
             {/* Date & Location */}

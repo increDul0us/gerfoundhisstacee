@@ -33,7 +33,7 @@ const Navbar = () => {
           href="/"
           className="flex items-center gap-2 font-display text-xl font-semibold text-lavender-600"
         >
-          S <Heart className="h-4 w-4 fill-gold text-gold" /> G
+          G <Heart className="h-4 w-4 fill-gold text-gold" /> S
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

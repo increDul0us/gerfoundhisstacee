@@ -1,6 +1,6 @@
-export const COUPLE_NAME_1 = "Stacee-Ann";
-export const COUPLE_NAME_2 = "Gerard";
-export const COUPLE_FULL = "Stacee-Ann & Gerard Gautam";
+export const COUPLE_NAME_1 = "Gerard";
+export const COUPLE_NAME_2 = "Stacee-Ann";
+export const COUPLE_FULL = "Gerard & Stacee-Ann Gautam";
 export const HASHTAG = "#GerfoundhisStace";
 export const CONTACT_EMAIL = "GerfoundhisStace@gmail.com";
 
