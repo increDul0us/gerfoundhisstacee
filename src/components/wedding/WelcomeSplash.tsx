@@ -199,7 +199,7 @@ const WelcomeSplash = ({ onEnter }: WelcomeSplashProps) => {
                   className="font-display text-sm font-bold text-white"
                   style={{ textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}
                 >
-                  S&G
+                  G&S
                 </span>
               </div>
             </div>
