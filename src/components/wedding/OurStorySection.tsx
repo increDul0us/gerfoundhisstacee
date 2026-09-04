@@ -26,7 +26,7 @@ const OurStorySection = () => {
           <div className="relative mx-auto w-full max-w-sm sm:max-w-md">
             <img
               src={photo2}
-              alt="Stacee-Ann and Gerard"
+              alt="Gerard and Stacee-Ann"
               className="w-full rounded-2xl object-cover shadow-xl sm:rounded-3xl"
             />
             <div className="absolute -bottom-2 -right-2 rounded-xl border-4 border-white bg-lavender-100 px-3 py-1.5 shadow-md sm:-bottom-3 sm:-right-3 sm:rounded-2xl sm:px-4 sm:py-2">
